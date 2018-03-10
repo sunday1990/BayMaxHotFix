@@ -1,0 +1,559 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		16C6518220538E8600EE6B16 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C6518120538E8600EE6B16 /* AppDelegate.m */; };
+		16C6518520538E8600EE6B16 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C6518420538E8600EE6B16 /* ViewController.m */; };
+		16C6518820538E8600EE6B16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16C6518620538E8600EE6B16 /* Main.storyboard */; };
+		16C6518A20538E8600EE6B16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16C6518920538E8600EE6B16 /* Assets.xcassets */; };
+		16C6518D20538E8600EE6B16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16C6518B20538E8600EE6B16 /* LaunchScreen.storyboard */; };
+		16C6519020538E8600EE6B16 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C6518F20538E8600EE6B16 /* main.m */; };
+		16C6519A20538E8700EE6B16 /* BayMaxHotFixTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C6519920538E8700EE6B16 /* BayMaxHotFixTests.m */; };
+		16C651A520538E8700EE6B16 /* BayMaxHotFixUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C651A420538E8700EE6B16 /* BayMaxHotFixUITests.m */; };
+		16C651B420538EB100EE6B16 /* BayMaxHotFix.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C651B320538EB100EE6B16 /* BayMaxHotFix.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		16C6519620538E8700EE6B16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16C6517520538E8600EE6B16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16C6517C20538E8600EE6B16;
+			remoteInfo = BayMaxHotFix;
+		};
+		16C651A120538E8700EE6B16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16C6517520538E8600EE6B16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16C6517C20538E8600EE6B16;
+			remoteInfo = BayMaxHotFix;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		16C6517D20538E8600EE6B16 /* BayMaxHotFix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BayMaxHotFix.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		16C6518020538E8600EE6B16 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		16C6518120538E8600EE6B16 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		16C6518320538E8600EE6B16 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		16C6518420538E8600EE6B16 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		16C6518720538E8600EE6B16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		16C6518920538E8600EE6B16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		16C6518C20538E8600EE6B16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		16C6518E20538E8600EE6B16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16C6518F20538E8600EE6B16 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		16C6519520538E8700EE6B16 /* BayMaxHotFixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BayMaxHotFixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		16C6519920538E8700EE6B16 /* BayMaxHotFixTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BayMaxHotFixTests.m; sourceTree = "<group>"; };
+		16C6519B20538E8700EE6B16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16C651A020538E8700EE6B16 /* BayMaxHotFixUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BayMaxHotFixUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		16C651A420538E8700EE6B16 /* BayMaxHotFixUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BayMaxHotFixUITests.m; sourceTree = "<group>"; };
+		16C651A620538E8700EE6B16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16C651B220538EB100EE6B16 /* BayMaxHotFix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BayMaxHotFix.h; sourceTree = "<group>"; };
+		16C651B320538EB100EE6B16 /* BayMaxHotFix.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BayMaxHotFix.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		16C6517A20538E8600EE6B16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16C6519220538E8700EE6B16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16C6519D20538E8700EE6B16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16C6517420538E8600EE6B16 = {
+			isa = PBXGroup;
+			children = (
+				16C6517F20538E8600EE6B16 /* BayMaxHotFix */,
+				16C6519820538E8700EE6B16 /* BayMaxHotFixTests */,
+				16C651A320538E8700EE6B16 /* BayMaxHotFixUITests */,
+				16C6517E20538E8600EE6B16 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		16C6517E20538E8600EE6B16 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				16C6517D20538E8600EE6B16 /* BayMaxHotFix.app */,
+				16C6519520538E8700EE6B16 /* BayMaxHotFixTests.xctest */,
+				16C651A020538E8700EE6B16 /* BayMaxHotFixUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		16C6517F20538E8600EE6B16 /* BayMaxHotFix */ = {
+			isa = PBXGroup;
+			children = (
+				16C651B220538EB100EE6B16 /* BayMaxHotFix.h */,
+				16C651B320538EB100EE6B16 /* BayMaxHotFix.m */,
+				16C6518020538E8600EE6B16 /* AppDelegate.h */,
+				16C6518120538E8600EE6B16 /* AppDelegate.m */,
+				16C6518320538E8600EE6B16 /* ViewController.h */,
+				16C6518420538E8600EE6B16 /* ViewController.m */,
+				16C6518620538E8600EE6B16 /* Main.storyboard */,
+				16C6518920538E8600EE6B16 /* Assets.xcassets */,
+				16C6518B20538E8600EE6B16 /* LaunchScreen.storyboard */,
+				16C6518E20538E8600EE6B16 /* Info.plist */,
+				16C6518F20538E8600EE6B16 /* main.m */,
+			);
+			path = BayMaxHotFix;
+			sourceTree = "<group>";
+		};
+		16C6519820538E8700EE6B16 /* BayMaxHotFixTests */ = {
+			isa = PBXGroup;
+			children = (
+				16C6519920538E8700EE6B16 /* BayMaxHotFixTests.m */,
+				16C6519B20538E8700EE6B16 /* Info.plist */,
+			);
+			path = BayMaxHotFixTests;
+			sourceTree = "<group>";
+		};
+		16C651A320538E8700EE6B16 /* BayMaxHotFixUITests */ = {
+			isa = PBXGroup;
+			children = (
+				16C651A420538E8700EE6B16 /* BayMaxHotFixUITests.m */,
+				16C651A620538E8700EE6B16 /* Info.plist */,
+			);
+			path = BayMaxHotFixUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		16C6517C20538E8600EE6B16 /* BayMaxHotFix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16C651A920538E8700EE6B16 /* Build configuration list for PBXNativeTarget "BayMaxHotFix" */;
+			buildPhases = (
+				16C6517920538E8600EE6B16 /* Sources */,
+				16C6517A20538E8600EE6B16 /* Frameworks */,
+				16C6517B20538E8600EE6B16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BayMaxHotFix;
+			productName = BayMaxHotFix;
+			productReference = 16C6517D20538E8600EE6B16 /* BayMaxHotFix.app */;
+			productType = "com.apple.product-type.application";
+		};
+		16C6519420538E8700EE6B16 /* BayMaxHotFixTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16C651AC20538E8700EE6B16 /* Build configuration list for PBXNativeTarget "BayMaxHotFixTests" */;
+			buildPhases = (
+				16C6519120538E8700EE6B16 /* Sources */,
+				16C6519220538E8700EE6B16 /* Frameworks */,
+				16C6519320538E8700EE6B16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				16C6519720538E8700EE6B16 /* PBXTargetDependency */,
+			);
+			name = BayMaxHotFixTests;
+			productName = BayMaxHotFixTests;
+			productReference = 16C6519520538E8700EE6B16 /* BayMaxHotFixTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		16C6519F20538E8700EE6B16 /* BayMaxHotFixUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16C651AF20538E8700EE6B16 /* Build configuration list for PBXNativeTarget "BayMaxHotFixUITests" */;
+			buildPhases = (
+				16C6519C20538E8700EE6B16 /* Sources */,
+				16C6519D20538E8700EE6B16 /* Frameworks */,
+				16C6519E20538E8700EE6B16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				16C651A220538E8700EE6B16 /* PBXTargetDependency */,
+			);
+			name = BayMaxHotFixUITests;
+			productName = BayMaxHotFixUITests;
+			productReference = 16C651A020538E8700EE6B16 /* BayMaxHotFixUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		16C6517520538E8600EE6B16 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = ccSunday;
+				TargetAttributes = {
+					16C6517C20538E8600EE6B16 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					16C6519420538E8700EE6B16 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 16C6517C20538E8600EE6B16;
+					};
+					16C6519F20538E8700EE6B16 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 16C6517C20538E8600EE6B16;
+					};
+				};
+			};
+			buildConfigurationList = 16C6517820538E8600EE6B16 /* Build configuration list for PBXProject "BayMaxHotFix" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 16C6517420538E8600EE6B16;
+			productRefGroup = 16C6517E20538E8600EE6B16 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				16C6517C20538E8600EE6B16 /* BayMaxHotFix */,
+				16C6519420538E8700EE6B16 /* BayMaxHotFixTests */,
+				16C6519F20538E8700EE6B16 /* BayMaxHotFixUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		16C6517B20538E8600EE6B16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16C6518D20538E8600EE6B16 /* LaunchScreen.storyboard in Resources */,
+				16C6518A20538E8600EE6B16 /* Assets.xcassets in Resources */,
+				16C6518820538E8600EE6B16 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16C6519320538E8700EE6B16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16C6519E20538E8700EE6B16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		16C6517920538E8600EE6B16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16C6518520538E8600EE6B16 /* ViewController.m in Sources */,
+				16C651B420538EB100EE6B16 /* BayMaxHotFix.m in Sources */,
+				16C6519020538E8600EE6B16 /* main.m in Sources */,
+				16C6518220538E8600EE6B16 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16C6519120538E8700EE6B16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16C6519A20538E8700EE6B16 /* BayMaxHotFixTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16C6519C20538E8700EE6B16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16C651A520538E8700EE6B16 /* BayMaxHotFixUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		16C6519720538E8700EE6B16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16C6517C20538E8600EE6B16 /* BayMaxHotFix */;
+			targetProxy = 16C6519620538E8700EE6B16 /* PBXContainerItemProxy */;
+		};
+		16C651A220538E8700EE6B16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16C6517C20538E8600EE6B16 /* BayMaxHotFix */;
+			targetProxy = 16C651A120538E8700EE6B16 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		16C6518620538E8600EE6B16 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16C6518720538E8600EE6B16 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		16C6518B20538E8600EE6B16 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16C6518C20538E8600EE6B16 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		16C651A720538E8700EE6B16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		16C651A820538E8700EE6B16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		16C651AA20538E8700EE6B16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BayMaxHotFix/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ccSunday.-BayMaxHotFix.BayMaxHotFix";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		16C651AB20538E8700EE6B16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BayMaxHotFix/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ccSunday.-BayMaxHotFix.BayMaxHotFix";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		16C651AD20538E8700EE6B16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BayMaxHotFixTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ccSunday.-BayMaxHotFix.BayMaxHotFixTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BayMaxHotFix.app/BayMaxHotFix";
+			};
+			name = Debug;
+		};
+		16C651AE20538E8700EE6B16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BayMaxHotFixTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ccSunday.-BayMaxHotFix.BayMaxHotFixTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BayMaxHotFix.app/BayMaxHotFix";
+			};
+			name = Release;
+		};
+		16C651B020538E8700EE6B16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BayMaxHotFixUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ccSunday.-BayMaxHotFix.BayMaxHotFixUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BayMaxHotFix;
+			};
+			name = Debug;
+		};
+		16C651B120538E8700EE6B16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BayMaxHotFixUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ccSunday.-BayMaxHotFix.BayMaxHotFixUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BayMaxHotFix;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16C6517820538E8600EE6B16 /* Build configuration list for PBXProject "BayMaxHotFix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16C651A720538E8700EE6B16 /* Debug */,
+				16C651A820538E8700EE6B16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16C651A920538E8700EE6B16 /* Build configuration list for PBXNativeTarget "BayMaxHotFix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16C651AA20538E8700EE6B16 /* Debug */,
+				16C651AB20538E8700EE6B16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16C651AC20538E8700EE6B16 /* Build configuration list for PBXNativeTarget "BayMaxHotFixTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16C651AD20538E8700EE6B16 /* Debug */,
+				16C651AE20538E8700EE6B16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16C651AF20538E8700EE6B16 /* Build configuration list for PBXNativeTarget "BayMaxHotFixUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16C651B020538E8700EE6B16 /* Debug */,
+				16C651B120538E8700EE6B16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 16C6517520538E8600EE6B16 /* Project object */;
+}
