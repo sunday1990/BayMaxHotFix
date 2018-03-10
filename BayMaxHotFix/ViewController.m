@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "MightyCrash.h"
+#import "BayMaxHotFix.h"
 
 @interface ViewController ()
 
@@ -17,6 +19,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    MightyCrash *crash = [[MightyCrash alloc]init];
+    [crash divideUsingDenominator:0];
+//    NSString *fixScriptString = @"\
+        runInstanceWithNoParamter(crash,'mightCrashTest');\
+    ";
+//    [BayMaxHotFix evalString:fixScriptString];
+//    [crash performSelector:NSSelectorFromString(@"fffd")];
 }
 
 

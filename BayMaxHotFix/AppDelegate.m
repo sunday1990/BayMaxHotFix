@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "BayMaxHotFix.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,44 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [BayMaxHotFix fixIt];
+    
+    NSString *fixScriptString = @" \
+    fixInstanceMethodReplace('MightyCrash', 'divideUsingDenominator:', function(instance, originInvocation, originArguments){ \
+    if (originArguments[0] == 0) { \
+        console.log('zero goes here'); \
+    } else { \
+        runInvocation(originInvocation); \
+    } \
+        runInstanceWithNoParamter(instance,'mightCrashTest')\
+    }); \
+    \
+    ";
+    
+//    runInstanceWithNoParamter(instance['__obj'],'mightCrashTest')\
+
+//runInstanceWithNoParamter(instance,'mightCrashTest');\
+
+    
+
+
+//    mightCrashTestWitha:(NSString *)a b:(NSString *)
+    
+    /*
+     [self context][@"runInstanceWithNoParamter"] = ^id(id instance, NSString *selectorName) {
+     return [self _runInstanceWithInstance:instance selector:selectorName obj1:nil obj2:nil];
+     };
+
+     */
+    
+//    NSString *fixScriptString = @"\
+//        runInstanceWithNoParamter('MightyCrash','mightCrashTest');\
+//    ";
+    
+//    [self context][@"runInstanceWithNoParamter"] = ^id(id instance, NSString *selectorName) {
+    
+
+    [BayMaxHotFix evalString:fixScriptString];
     return YES;
 }
 

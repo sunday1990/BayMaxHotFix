@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MightyCrash.h"
 
 @interface BayMaxHotFix : NSObject
+
++ (void)fixIt;
+
++ (void)evalString:(NSString *)javascriptString;
 
 @end
