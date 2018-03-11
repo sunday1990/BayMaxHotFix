@@ -11,6 +11,8 @@
 @interface MightyCrash : NSObject
 - (float)divideUsingDenominator:(NSInteger)denominator;
 - (void)mightCrashTestWitha:(NSString *)a b:(NSString *)b;
-+ (void)mightCrashTest;
+- (NSString *)mightCrashTest;
+
+- (void)mightCrashTestVoid;
 
 @end

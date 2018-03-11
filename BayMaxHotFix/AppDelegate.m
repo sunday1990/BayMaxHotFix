@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "BayMaxHotFix.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,7 +20,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [BayMaxHotFix fixIt];
-    
     NSString *fixScriptString = @" \
     fixInstanceMethodReplace('MightyCrash', 'divideUsingDenominator:', function(instance, originInvocation, originArguments){ \
     if (originArguments[0] == 0) { \
@@ -27,10 +27,21 @@
     } else { \
         runInvocation(originInvocation); \
     } \
-        runInstanceWithNoParamter(instance,'mightCrashTest')\
+        runInstanceWithNoParamter(instance,'mightCrashTestVoid')\
     }); \
     \
     ";
+    [BayMaxHotFix evalString:fixScriptString];
+
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    self.window.rootViewController = [[ViewController alloc]init];
+
+    
+    //    runInstanceWithNoParamter(instance,'mightCrashTest')\
+
     
 //    runInstanceWithNoParamter(instance['__obj'],'mightCrashTest')\
 
@@ -55,7 +66,6 @@
 //    [self context][@"runInstanceWithNoParamter"] = ^id(id instance, NSString *selectorName) {
     
 
-    [BayMaxHotFix evalString:fixScriptString];
     return YES;
 }
 

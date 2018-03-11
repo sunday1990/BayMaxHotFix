@@ -22,9 +22,10 @@
     
     MightyCrash *crash = [[MightyCrash alloc]init];
     [crash divideUsingDenominator:0];
+    
 //    NSString *fixScriptString = @"\
-        runInstanceWithNoParamter(crash,'mightCrashTest');\
-    ";
+//        runInstanceWithNoParamter(crash,'mightCrashTest');\
+//    ";
 //    [BayMaxHotFix evalString:fixScriptString];
 //    [crash performSelector:NSSelectorFromString(@"fffd")];
 }

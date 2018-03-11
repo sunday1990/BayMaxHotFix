@@ -12,7 +12,6 @@
 // 传一个 0 就 gg 了
 - (float)divideUsingDenominator:(NSInteger)denominator
 {
-    [self performSelector:NSSelectorFromString(@"11")];
     return 1.f/denominator;
     
 }
@@ -21,9 +20,17 @@
     NSLog(@"mightCrashTest");
 }
 
-+ (void)mightCrashTest{
-    NSLog(@"mightCrashTestClass");
+- (NSString *)mightCrashTest{
+//    NSLog(@"mightCrashTestClass");
+    NSString *str = @"abc";
+    NSLog(@"Pstr:%p",str);
+    return str;
 }
+
+- (void)mightCrashTestVoid{
+    NSLog(@"mightCrashTestVoid");
+}
+
 
 
 @end

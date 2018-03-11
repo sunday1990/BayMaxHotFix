@@ -53,9 +53,9 @@
     SEL sel = NSSelectorFromString(selectorName);
     [klass aspect_hookSelector:sel withOptions:option usingBlock:^(id<AspectInfo> aspectInfo){
         
-//        [fixImpl callWithArguments:@[aspectInfo.instance, aspectInfo.originalInvocation, aspectInfo.arguments]];
+        [fixImpl callWithArguments:@[aspectInfo.instance, aspectInfo.originalInvocation, aspectInfo.arguments]];
         
-        [fixImpl callWithArguments:@[_wrapObj(aspectInfo.instance), aspectInfo.originalInvocation, aspectInfo.arguments]];
+//        [fixImpl callWithArguments:@[_wrapObj(aspectInfo.instance), aspectInfo.originalInvocation, aspectInfo.arguments]];
     } error:nil];
 }
 
@@ -79,18 +79,18 @@ void (*action)(id, SEL,...) = (void (*)(id, SEL, ...))objc_msgSend;
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
     NSLog(@"instance:%@",instance);
-//    NSError *error = [NSError errorWithDomain:NSLocalizedDescriptionKey code:1001 userInfo:nil];
-//    [instance VKCallSelectorName:selector error:&error,obj1,obj2];
     MightyCrash *crash = (MightyCrash *)instance;
     [crash mightCrashTestWitha:@"1" b:@"2"];
     SEL sel = NSSelectorFromString(selector);
-    
-//    action(crash,sel);
-    
-//    [crash performSelector:NSSelectorFromString(selector) withObject:obj1 withObject:obj2];
-    //    return [instance performSelector:NSSelectorFromString(selector) withObject:obj1 withObject:obj2];
+    id returnObj = [instance performSelector:NSSelectorFromString(selector) withObject:obj1 withObject:obj2];
+    NSLog(@"returnObj:%@",returnObj);
+    return  [instance performSelector:NSSelectorFromString(selector) withObject:obj1 withObject:obj2];
 
-    return instance;
+
+//    [instance performSelector:NSSelectorFromString(@"mightCrashTestWitha:b:") withObject:@"1" withObject:@"2"];
+//
+//
+//    return instance;
 #pragma clang diagnostic pop
 }
 
@@ -203,11 +203,12 @@ static id formatJSToOC(JSValue *jsval)
     };
     
 //    [self context][@"runInstanceWithNoParamter"] = ^id(id instance, NSString *selectorName) {
-//        return [self _runInstanceWithInstance:instance selector:selectorName obj1:nil obj2:nil];
+//        id object = [self _runInstanceWithInstance:instance selector:selectorName obj1:nil obj2:nil];
+//        return object;
 //    };
     
     [self context][@"runInstanceWithNoParamter"] = ^id(JSValue *value, NSString *selectorName) {
-        
+        NSLog(@"returnObject:%@",[self _runInstanceWithInstance:formatJSToOC(value) selector:selectorName obj1:nil obj2:nil]);
         return [self _runInstanceWithInstance:formatJSToOC(value) selector:selectorName obj1:nil obj2:nil];
     };
     
