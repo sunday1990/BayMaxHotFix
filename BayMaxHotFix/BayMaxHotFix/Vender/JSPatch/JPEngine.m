@@ -184,7 +184,7 @@ static void (^_exceptionBlock)(NSString *log) = ^void(NSString *log) {
         return [JSValue valueWithObject:_JSLastCallStack inContext:_context];
     };
 #endif
-
+//js调用oc
     context[@"_OC_defineClass"] = ^(NSString *classDeclaration, JSValue *instanceMethods, JSValue *classMethods) {
         return defineClass(classDeclaration, instanceMethods, classMethods);
     };
@@ -216,7 +216,7 @@ static void (^_exceptionBlock)(NSString *log) = ^void(NSString *log) {
         id realObj = formatJSToOC(obj);
         objc_setAssociatedObject(realObj, kPropAssociatedObjectKey, val, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     };
-    
+    //callWithArguments：执行js方法，带参数的
     context[@"__weak"] = ^id(JSValue *jsval) {
         id obj = formatJSToOC(jsval);
         return [[JSContext currentContext][@"_formatOCToJS"] callWithArguments:@[formatOCToJS([JPBoxing boxWeakObj:obj])]];
@@ -257,7 +257,7 @@ static void (^_exceptionBlock)(NSString *log) = ^void(NSString *log) {
 
     context[@"dispatch_after"] = ^(double time, JSValue *func) {
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(time * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [func callWithArguments:nil];
+            [func callWithArguments:nil];//执行js方法
         });
     };
     
