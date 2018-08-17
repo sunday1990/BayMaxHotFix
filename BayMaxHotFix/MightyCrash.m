@@ -9,6 +9,7 @@
 #import "MightyCrash.h"
 
 @implementation MightyCrash
+
 // 传一个 0 就 gg 了
 - (float)divideUsingDenominator:(NSInteger)denominator
 {
@@ -31,6 +32,20 @@
     NSLog(@"mightCrashTestVoid");
 }
 
+- (void)mightCrashTestWithOneParam:(NSString *)a{
+    NSLog(@"one param a is %@",a);
+}
+
+- (void)mightCrashTestWithTwoParams:(NSString *)a b:(NSString *)b{
+    NSLog(@"two params a is %@\n b is %@",a,b);
+}
+
+- (instancetype)initWithName:(NSString *)name{
+    if (self = [super init]) {
+        NSLog(@"name is %@",name);
+    }
+    return self;
+}
 
 
 @end

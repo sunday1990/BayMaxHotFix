@@ -19,53 +19,24 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
     [BayMaxHotFix fixIt];
-    NSString *fixScriptString = @" \
-    fixInstanceMethodReplace('MightyCrash', 'divideUsingDenominator:', function(instance, originInvocation, originArguments){ \
-    if (originArguments[0] == 0) { \
-        console.log('zero goes here'); \
-    } else { \
-        runInvocation(originInvocation); \
-    } \
-        runInstanceWithNoParamter(instance,'mightCrashTestVoid')\
-    }); \
+    
+    NSString *fixScriptString =
+    @"\
+    var obj = createInstance('MightyCrash','initWithName:','李四');\
+    console.log(obj);\
+    fixInstanceMethodAfter('ViewController','haha',function(instance, originInvocation, originArguments){\
+        console.log('点击了屏幕');\
+        runVoidClassWith1Paramter('SVProgressHUD','showSuccessWithStatus:','patch成功');\
+    });\
     \
     ";
     [BayMaxHotFix evalString:fixScriptString];
-
-    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     self.window.rootViewController = [[ViewController alloc]init];
-
-    
-    //    runInstanceWithNoParamter(instance,'mightCrashTest')\
-
-    
-//    runInstanceWithNoParamter(instance['__obj'],'mightCrashTest')\
-
-//runInstanceWithNoParamter(instance,'mightCrashTest');\
-
-    
-
-
-//    mightCrashTestWitha:(NSString *)a b:(NSString *)
-    
-    /*
-     [self context][@"runInstanceWithNoParamter"] = ^id(id instance, NSString *selectorName) {
-     return [self _runInstanceWithInstance:instance selector:selectorName obj1:nil obj2:nil];
-     };
-
-     */
-    
-//    NSString *fixScriptString = @"\
-//        runInstanceWithNoParamter('MightyCrash','mightCrashTest');\
-//    ";
-    
-//    [self context][@"runInstanceWithNoParamter"] = ^id(id instance, NSString *selectorName) {
-    
-
     return YES;
 }
 

@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "MightyCrash.h"
-#import "BayMaxHotFix.h"
+#import <SVProgressHUD/SVProgressHUD.h>
 
 @interface ViewController ()
 
@@ -22,18 +22,21 @@
     
     MightyCrash *crash = [[MightyCrash alloc]init];
     [crash divideUsingDenominator:0];
-    
-//    NSString *fixScriptString = @"\
-//        runInstanceWithNoParamter(crash,'mightCrashTest');\
-//    ";
-//    [BayMaxHotFix evalString:fixScriptString];
-//    [crash performSelector:NSSelectorFromString(@"fffd")];
+//    [SVProgressHUD showSuccessWithStatus:@"方法添加成功"];
 }
 
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [self haha];
+}
+
+- (void)haha{
+    NSLog(@"haha，点击了屏幕");
 }
 
 

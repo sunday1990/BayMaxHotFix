@@ -10,9 +10,10 @@
 
 @interface MightyCrash : NSObject
 - (float)divideUsingDenominator:(NSInteger)denominator;
-- (void)mightCrashTestWitha:(NSString *)a b:(NSString *)b;
 - (NSString *)mightCrashTest;
 
 - (void)mightCrashTestVoid;
-
+- (void)mightCrashTestWithOneParam:(NSString *)a;
+- (void)mightCrashTestWithTwoParams:(NSString *)a b:(NSString *)b;
+- (instancetype)initWithName:(NSString *)name;
 @end
