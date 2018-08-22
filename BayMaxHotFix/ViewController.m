@@ -8,7 +8,6 @@
 
 #import "ViewController.h"
 #import "MightyCrash.h"
-#import <SVProgressHUD/SVProgressHUD.h>
 
 @interface ViewController ()
 
@@ -23,6 +22,7 @@
     MightyCrash *crash = [[MightyCrash alloc]init];
     [crash divideUsingDenominator:0];
 //    [SVProgressHUD showSuccessWithStatus:@"方法添加成功"];
+
 }
 
 
@@ -33,6 +33,10 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     [self haha];
+//    self.view setBackgroundColor:<#(UIColor * _Nullable)#>
+    [UIColor redColor];
+    
+//    UIColor.redColor();
 }
 
 - (void)haha{

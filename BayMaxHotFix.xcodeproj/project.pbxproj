@@ -17,9 +17,12 @@
 		16C651A520538E8700EE6B16 /* BayMaxHotFixUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C651A420538E8700EE6B16 /* BayMaxHotFixUITests.m */; };
 		16C651B420538EB100EE6B16 /* BayMaxHotFix.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C651B320538EB100EE6B16 /* BayMaxHotFix.m */; };
 		16C651BA2053A1C400EE6B16 /* Aspects.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C651B82053A1C400EE6B16 /* Aspects.m */; };
-		16C651BD2053A1E300EE6B16 /* VKMsgSend.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C651BC2053A1E300EE6B16 /* VKMsgSend.m */; };
 		16C651C02053A21500EE6B16 /* MightyCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 16C651BF2053A21500EE6B16 /* MightyCrash.m */; };
 		60B96F6A74DCCC7AE181E9A6 /* Pods_BayMaxHotFix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8DECF87F9DC32CCFCEDF901 /* Pods_BayMaxHotFix.framework */; };
+		8EC3248F2126C7EE00E31D4B /* JPEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC3248C2126C7EE00E31D4B /* JPEngine.m */; };
+		8EC324902126C7EE00E31D4B /* JSPatch.js in Resources */ = {isa = PBXBuildFile; fileRef = 8EC3248E2126C7EE00E31D4B /* JSPatch.js */; };
+		8EC324932126C8F800E31D4B /* ZGPatchEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC324922126C8F800E31D4B /* ZGPatchEngine.m */; };
+		8EC324952126CAB800E31D4B /* demo.js in Resources */ = {isa = PBXBuildFile; fileRef = 8EC324942126CAB700E31D4B /* demo.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,11 +63,15 @@
 		16C651B320538EB100EE6B16 /* BayMaxHotFix.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BayMaxHotFix.m; sourceTree = "<group>"; };
 		16C651B82053A1C400EE6B16 /* Aspects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Aspects.m; sourceTree = "<group>"; };
 		16C651B92053A1C400EE6B16 /* Aspects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Aspects.h; sourceTree = "<group>"; };
-		16C651BB2053A1E300EE6B16 /* VKMsgSend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKMsgSend.h; sourceTree = "<group>"; };
-		16C651BC2053A1E300EE6B16 /* VKMsgSend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKMsgSend.m; sourceTree = "<group>"; };
 		16C651BE2053A21500EE6B16 /* MightyCrash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MightyCrash.h; sourceTree = "<group>"; };
 		16C651BF2053A21500EE6B16 /* MightyCrash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MightyCrash.m; sourceTree = "<group>"; };
 		7843B4900AEDFB30E685AC1B /* Pods-BayMaxHotFix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BayMaxHotFix.release.xcconfig"; path = "Pods/Target Support Files/Pods-BayMaxHotFix/Pods-BayMaxHotFix.release.xcconfig"; sourceTree = "<group>"; };
+		8EC3248C2126C7EE00E31D4B /* JPEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPEngine.m; sourceTree = "<group>"; };
+		8EC3248D2126C7EE00E31D4B /* JPEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPEngine.h; sourceTree = "<group>"; };
+		8EC3248E2126C7EE00E31D4B /* JSPatch.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = JSPatch.js; sourceTree = "<group>"; };
+		8EC324912126C8F800E31D4B /* ZGPatchEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGPatchEngine.h; sourceTree = "<group>"; };
+		8EC324922126C8F800E31D4B /* ZGPatchEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGPatchEngine.m; sourceTree = "<group>"; };
+		8EC324942126CAB700E31D4B /* demo.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = demo.js; sourceTree = "<group>"; };
 		D8DECF87F9DC32CCFCEDF901 /* Pods_BayMaxHotFix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BayMaxHotFix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC0BD8661FB0669B6E322A77 /* Pods-BayMaxHotFix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BayMaxHotFix.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BayMaxHotFix/Pods-BayMaxHotFix.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,6 +130,7 @@
 				16C651B52053A19B00EE6B16 /* BayMaxHotFix */,
 				16C6518020538E8600EE6B16 /* AppDelegate.h */,
 				16C6518120538E8600EE6B16 /* AppDelegate.m */,
+				8EC324942126CAB700E31D4B /* demo.js */,
 				16C6518320538E8600EE6B16 /* ViewController.h */,
 				16C6518420538E8600EE6B16 /* ViewController.m */,
 				16C651BE2053A21500EE6B16 /* MightyCrash.h */,
@@ -157,6 +165,7 @@
 		16C651B52053A19B00EE6B16 /* BayMaxHotFix */ = {
 			isa = PBXGroup;
 			children = (
+				8EC3248B2126C7EE00E31D4B /* JSPatch */,
 				8EC3248A2126AFB200E31D4B /* Core */,
 				16C651B72053A1AF00EE6B16 /* Vender */,
 			);
@@ -166,8 +175,6 @@
 		16C651B72053A1AF00EE6B16 /* Vender */ = {
 			isa = PBXGroup;
 			children = (
-				16C651BB2053A1E300EE6B16 /* VKMsgSend.h */,
-				16C651BC2053A1E300EE6B16 /* VKMsgSend.m */,
 				16C651B92053A1C400EE6B16 /* Aspects.h */,
 				16C651B82053A1C400EE6B16 /* Aspects.m */,
 			);
@@ -179,8 +186,20 @@
 			children = (
 				16C651B220538EB100EE6B16 /* BayMaxHotFix.h */,
 				16C651B320538EB100EE6B16 /* BayMaxHotFix.m */,
+				8EC324912126C8F800E31D4B /* ZGPatchEngine.h */,
+				8EC324922126C8F800E31D4B /* ZGPatchEngine.m */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		8EC3248B2126C7EE00E31D4B /* JSPatch */ = {
+			isa = PBXGroup;
+			children = (
+				8EC3248C2126C7EE00E31D4B /* JPEngine.m */,
+				8EC3248D2126C7EE00E31D4B /* JPEngine.h */,
+				8EC3248E2126C7EE00E31D4B /* JSPatch.js */,
+			);
+			path = JSPatch;
 			sourceTree = "<group>";
 		};
 		D0D30DBEC61D7407C0A3CFAC /* Frameworks */ = {
@@ -309,8 +328,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EC324952126CAB800E31D4B /* demo.js in Resources */,
 				16C6518D20538E8600EE6B16 /* LaunchScreen.storyboard in Resources */,
 				16C6518A20538E8600EE6B16 /* Assets.xcassets in Resources */,
+				8EC324902126C7EE00E31D4B /* JSPatch.js in Resources */,
 				16C6518820538E8600EE6B16 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,10 +412,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				16C651C02053A21500EE6B16 /* MightyCrash.m in Sources */,
-				16C651BD2053A1E300EE6B16 /* VKMsgSend.m in Sources */,
 				16C651BA2053A1C400EE6B16 /* Aspects.m in Sources */,
 				16C6518520538E8600EE6B16 /* ViewController.m in Sources */,
+				8EC324932126C8F800E31D4B /* ZGPatchEngine.m in Sources */,
 				16C651B420538EB100EE6B16 /* BayMaxHotFix.m in Sources */,
+				8EC3248F2126C7EE00E31D4B /* JPEngine.m in Sources */,
 				16C6519020538E8600EE6B16 /* main.m in Sources */,
 				16C6518220538E8600EE6B16 /* AppDelegate.m in Sources */,
 			);

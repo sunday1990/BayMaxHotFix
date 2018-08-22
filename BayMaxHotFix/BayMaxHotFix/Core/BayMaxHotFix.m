@@ -10,7 +10,6 @@
 #import <objc/runtime.h>
 #import <objc/message.h>
 #import <JavaScriptCore/JavaScriptCore.h>
-#import "VKMsgSend.h"
 #import "Aspects.h"
 
 @implementation BayMaxHotFix

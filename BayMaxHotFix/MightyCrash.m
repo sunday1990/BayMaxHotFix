@@ -14,7 +14,6 @@
 - (float)divideUsingDenominator:(NSInteger)denominator
 {
     return 1.f/denominator;
-    
 }
 
 - (void)mightCrashTestWitha:(NSString *)a b:(NSString *)b{

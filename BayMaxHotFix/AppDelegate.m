@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "BayMaxHotFix.h"
 #import "ViewController.h"
+#import "ZGPatchEngine.h"
+#import "JPEngine.h"
 
 @interface AppDelegate ()
 
@@ -19,20 +21,35 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
     [BayMaxHotFix fixIt];
+
+    [JPEngine startEngine];
+    NSString *sourcePath = [[NSBundle mainBundle] pathForResource:@"demo" ofType:@"js"];
+    NSString *script = [NSString stringWithContentsOfFile:sourcePath encoding:NSUTF8StringEncoding error:nil];
+    [JPEngine evaluateScript:script];
+
     
-    NSString *fixScriptString =
-    @"\
-    var obj = createInstance('MightyCrash','initWithName:','李四');\
-    console.log(obj);\
-    fixInstanceMethodAfter('ViewController','haha',function(instance, originInvocation, originArguments){\
-        console.log('点击了屏幕');\
-        runVoidClassWith1Paramter('SVProgressHUD','showSuccessWithStatus:','patch成功');\
-    });\
-    \
-    ";
-    [BayMaxHotFix evalString:fixScriptString];
+//    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 100, 100)];
+//    view.backgroundColor = [UIColor redColor];
+//    [self.view addSubview:view];
+
+    
+//    NSString *fixScriptString =
+//    @"\
+//    var obj = createInstance('MightyCrash','initWithName:','李四');\
+//    console.log(obj);\
+//    fixInstanceMethodAfter('ViewController','haha',function(instance, originInvocation, originArguments){\
+//        console.log('点击了屏幕');\
+//        runVoidClassWith1Paramter('SVProgressHUD','showSuccessWithStatus:','patch成功');\
+//        var view = createInstance('UIView','initWithFrame:',{x:0,y:0,width:100,height:100});\
+//        runVoidInstanceWith1Paramter(view,'setBackgroundColor:',runClassWithNoParamter('UIColor','redColor'));\
+//        console.log(view);\
+//    });\
+//    \
+//    ";
+//    
+//
+//    [BayMaxHotFix evalString:fixScriptString];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
